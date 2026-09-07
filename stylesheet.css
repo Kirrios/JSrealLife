@@ -10,7 +10,7 @@ body {
 
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: #533a3a;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -19,12 +19,12 @@ body {
 
 .topnav a:hover {
   text-decoration: underline;
-  color: rgb(255, 254, 244);
+  color: rgb(86, 78, 66);
 }
 
 .topnav a.active {
-  background-color: #04AA6D;
-  color: white;
+font-weight: bold;
+  color: rgb(93, 74, 74);
 }
 
 .mycontainer{
