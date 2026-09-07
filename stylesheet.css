@@ -39,3 +39,350 @@ font-weight: bold;
     font-size: larger;
     padding-left: 40px;
 }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+}
+
+/* --------------------
+   BOTTOM NAV
+-------------------- */
+
+.bottom-nav {
+    height: 55px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    padding-left: 80px;
+
+    color: #777;
+    font-size: 14px;
+}
+
+.bottom-nav span:nth-child(even) {
+    color: #aaa;
+}
+
+
+/* --------------------
+   SELVE PRODUKTSIDEN
+-------------------- */
+
+.product-page {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    min-height: calc(100vh - 55px);
+}
+/* --------------------
+   VENSTRE SIDE
+-------------------- */
+
+.product-image {
+    position: relative;
+
+    background: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 75%;
+    max-width: 800px;
+    height: auto;
+}
+
+/* FSC logo */
+
+.fsc-logo {
+    position: absolute;
+    top: 30px;
+    left: 90px;
+
+    width: 110px;
+    height: 110px;
+
+    border: 2px solid #276652;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #276652;
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* pileknapper */
+
+.arrow {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    border: none;
+    background: transparent;
+
+    font-size: 65px;
+
+    cursor: pointer;
+}.arrow.left {
+    left: 80px;
+    color: #ccc;
+}
+
+.arrow.right {
+    right: 25px;
+    color: #222;
+}
+
+/* --------------------
+   HØJRE SIDE
+-------------------- */
+
+.product-info {
+    background: #f8f7f5;
+
+    padding: 30px 55px 40px;
+
+    display: flex;
+    flex-direction: column;
+}
+/* Nyhed */
+
+.new {
+    display: inline-block;
+
+    width: fit-content;
+
+    background: #95734f;
+    color: white;
+
+    padding: 7px 13px;
+
+    font-size: 14px;
+
+    margin-bottom: 12px;
+}
+
+/* Titel */
+
+h1 {
+    font-size: 23px;
+    letter-spacing: 1px;
+
+    margin-bottom: 28px;
+}
+
+h1 strong {
+    font-weight: 800;
+}
+
+/* Farver */
+
+.colors {
+    display: flex;
+    gap: 12px;
+
+    margin-bottom: 15px;
+}
+
+.color-box {
+    width: 50px;
+    height: 50px;
+
+    background: #ad906b;
+
+    border: 1px solid #777;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+}
+
+.color-box:nth-child(2) {
+    background: #a98b65;
+}
+
+/* Beskrivelse */
+
+.description {
+    color: #444;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    margin-bottom: 65px;
+}
+
+/* Pris */
+
+.price {
+    font-size: 36px;
+    font-weight: bold;
+
+    margin-bottom: 50px;
+}
+/* Levering */
+
+.delivery {
+    align-self: flex-end;
+
+    color: #28705e;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+/* --------------------
+   KØBSFELT
+-------------------- */
+
+.buy-row {
+    display: flex;
+    gap: 12px;
+
+    width: 100%;
+}
+
+/* Antal */
+
+.quantity {
+    display: flex;
+
+    height: 60px;
+
+    border: 1px solid #333;
+}
+
+.quantity button,
+.quantity span {
+    width: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: white;
+
+    border: none;
+
+    font-size: 25px;
+}
+
+.quantity span {
+    font-size: 17px;
+
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+}
+
+/* Kurv */
+
+.cart {
+    flex: 1;
+
+    background: #2d2c2b;
+
+    color: white;
+
+    border: none;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.cart:hover {
+    background: #444;
+}
+
+/* --------------------
+   CLICK & COLLECT
+-------------------- */
+
+.bottom-buttons {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 12px;
+}
+
+.bottom-buttons > button:first-child {
+    flex: 1;
+
+    height: 60px;
+
+    background: transparent;
+
+    border: 1px solid #333;
+
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.heart {
+    width: 60px;
+
+    background: transparent;
+
+    border: 1px solid #333;
+
+    font-size: 35px;
+}
+
+/* --------------------
+   AFHENTNING
+-------------------- */
+
+.pickup {
+    margin-top: 30px;
+
+    background: #ebe7e4;
+
+    padding: 20px;
+
+    font-size: 16px;
+
+    line-height: 1.4;
+}
+
+/* --------------------
+   BUTIK
+-------------------- */
+
+.store {
+    margin-top: 12px;
+
+    background: #ebe7e4;
+
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    font-size: 17px;
+}
+
+.location {
+    font-size: 25px;
+}
+
+
