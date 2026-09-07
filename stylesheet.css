@@ -10,7 +10,7 @@ body {
 
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: #483e3e;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -19,10 +19,23 @@ body {
 
 .topnav a:hover {
   text-decoration: underline;
-  color: rgb(255, 254, 244);
+  color: rgb(71, 64, 58);
 }
 
 .topnav a.active {
-  background-color: #04AA6D;
-  color: white;
+font-weight: bold;
+  color: rgb(52, 43, 43);
+}
+
+.mycontainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ilva{
+    text-align: left;
+    background-color: #fefbee;
+    color:rgb(52, 43, 43);
+    font-size: larger;
+    padding-left: 40px;
 }
