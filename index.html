@@ -6,7 +6,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="stylesheet.css">
-
+<script src="stolcarousel.js" defer></script>
 </head>
 <body>
 <div class="mycontainer">
@@ -45,10 +45,21 @@
 
 <main class="product-page">
     <section class="product-image">
-        <button class="arrow-left">‹</button>
-        <img src="https://media.ilva.dk/webshop/dam/photo1/100004611617-001.jpg" alt="Vilo spisebordsstol">
-        <button class="arrow-right">›</button>
-    </section>
+
+    <button id="previous" class="arrow-left">‹</button>
+
+    <img
+        id="productImage"
+        src="https://media.ilva.dk/webshop/dam/photo1/100004611617-001.jpg"
+        alt="Vilo spisebordsstol set forfra"
+    >
+
+    <button id="next" class="arrow-right">›</button>
+
+     <div id="thumbnails" class="thumbnails">
+    </div>
+
+</section>
 
     <section class="product-info">
         <span class="New">Nyhed</span>
