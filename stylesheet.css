@@ -187,14 +187,12 @@ body {
 
     border: none;
 
+    font-size: 65px;
 
     cursor: pointer;
-}
-
-.arrow-left {
-    left: 25px;
     z-index: 10;
 }
+
 
 
 .arrow-left {
@@ -202,9 +200,6 @@ body {
 
     color: #ccc;
 }
-
-.arrow-right {
-    right: 25px;
 
 .arrow-right {
     right: 30px;
