@@ -90,6 +90,10 @@ body {
    VENSTRE SIDE
 -------------------- */
 
+/* =========================================
+   BILLEDE / CAROUSEL
+========================================= */
+
 .product-image {
     position: relative;
 
@@ -100,69 +104,67 @@ body {
     align-items: center;
 
     overflow: hidden;
+
+    height: 700px;
 }
 
-.product-image img {
-    width: 75%;
-    max-width: 800px;
-    height: auto;
+
+/* Det store billede */
+
+.product-image > img {
+    width: 480px;
+    height: 500px;
+    object-fit: contain;
 }
 
-/* FSC logo */
 
-.fsc-logo {
-    position: absolute;
-    top: 30px;
-    left: 90px;
+/* =========================================
+   PILE
+========================================= */
 
-    width: 110px;
-    height: 110px;
-
-    border: 2px solid #276652;
-    border-radius: 8px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    color: #276652;
-    font-family: Georgia, serif;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-/* pileknapper */
-
-
-.arrow-left, .arrow-right {
+.arrow-left,
+.arrow-right {
     position: absolute;
 
-    top: 50%;
+    top: 45%;
+
     transform: translateY(-50%);
 
-    border: none;
     background: transparent;
+
+    border: none;
 
     font-size: 65px;
 
     cursor: pointer;
+
+    z-index: 10;
 }
 
+
 .arrow-left {
-    left: 80px;
+    left: 50px;
+
     color: #ccc;
 }
 
+
 .arrow-right {
-    right: 25px;
-    color: #222;
+    right: 30px;
+
+    color: #333;
 }
+
+
+/* =========================================
+   THUMBNAILS
+========================================= */
 
 .thumbnails {
 
     position: absolute;
 
-    bottom: 25px;
+    bottom: 30px;
 
     left: 50%;
 
@@ -170,9 +172,45 @@ body {
 
     display: flex;
 
-    gap: 10px;
+    gap: 12px;
+
+    z-index: 10;
 }
 
+
+/* Hvert thumbnail */
+
+.thumbnail {
+
+    width: 75px;
+    height: 75px;
+
+    object-fit: cover;
+
+    border: 1px solid #ccc;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+
+/* Når man holder musen over */
+
+.thumbnail:hover {
+
+    transform: scale(1.05);
+
+    border-color: #555;
+}
+
+
+/* Det billede man er på */
+
+.thumbnail.active {
+
+    border: 3px solid #333;
+}
 /* --------------------
    HØJRE SIDE
 -------------------- */
