@@ -1,0 +1,88 @@
+/* INSPO CAROUSEL */
+ul {
+  width: 100vw;
+  height: 509px;
+  padding: 20px 400px;
+
+  display: flex;
+
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+
+  anchor-name: --inspo-carousel;
+
+  columns: 1;
+  text-align: center;
+}
+
+ul::column {
+  scroll-snap-align: center;
+}
+
+
+ul::scroll-button(*) {
+  border: 0;
+  font-size: 2rem;
+  background: none;
+  color: #000;
+  opacity: 0.7;
+  cursor: pointer;
+
+  position: absolute;
+  position-anchor: --inspo-carousel;
+}
+
+ul::scroll-button(*):hover,
+ul::scroll-button(*):focus {
+  opacity: 1;
+}
+
+ul::scroll-button(*):active {
+  translate: 1px 1px;
+}
+
+ul::scroll-button(*):disabled{
+  opacity: 0.2;
+  cursor: unset;
+}
+
+ul::scroll-button(left) {
+  content: "<" / "Previous";
+  right: calc(anchor(left) - 70px);
+  bottom: calc(anchor(top) + 13px);
+}
+
+ul::scroll-button(right) {
+  content: ">" / "Next";
+  left: calc(anchor(right) - 70px);
+  bottom: calc(anchor(top) + 13px);
+}
+
+li{
+  list-style-type: none;
+
+  display: inline-block;
+  height: 392px;
+  width: 85%;
+  max-width: 400px;
+
+  background-color: #ddd;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 0 10px;
+
+  text-align: left;  
+
+  flex: 0 0 50em;
+
+  scroll-snap-align: center;
+}
+
+.carousel--shadow {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.carousel--image {
+  height: 50%;
+  width: 50%;
+}
