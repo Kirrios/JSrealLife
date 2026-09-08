@@ -117,20 +117,27 @@ body {
     transform: translateY(-50%);
 
     border: none;
+    outline: none;
     background: transparent;
 
-    font-size: 65px;
+    padding: 0;
+    margin: 0;
+
+    font-size: 70px;
+    font-weight: 300;
+    line-height: 1;
+
+    color: #222;
 
     cursor: pointer;
-
-}.arrow.left {
-    left: 80px;
-    color: #ccc;
 }
 
-.arrow.right {
+.arrow-left {
+    left: 25px;
+}
+
+.arrow-right {
     right: 25px;
-    color: #222;
 }
 
 /* --------------------
