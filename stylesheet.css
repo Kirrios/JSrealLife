@@ -681,7 +681,7 @@ h1 strong {
 ul {
   width: 100vw;
   height: 509px;
-  padding: 20px 400px;
+  padding: 0 400px 20px;
 
   display: flex;
 
