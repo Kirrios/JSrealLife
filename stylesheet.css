@@ -133,7 +133,8 @@ body {
 
 /* pileknapper */
 
-.arrow {
+
+.arrow-left, .arrow-right {
     position: absolute;
 
     top: 50%;
@@ -145,12 +146,14 @@ body {
     font-size: 65px;
 
     cursor: pointer;
-}.arrow.left {
+}
+
+.arrow-left {
     left: 80px;
     color: #ccc;
 }
 
-.arrow.right {
+.arrow-right {
     right: 25px;
     color: #222;
 }
