@@ -187,10 +187,12 @@ body {
 
     border: none;
 
-    font-size: 65px;
 
     cursor: pointer;
+}
 
+.arrow-left {
+    left: 25px;
     z-index: 10;
 }
 
@@ -201,6 +203,8 @@ body {
     color: #ccc;
 }
 
+.arrow-right {
+    right: 25px;
 
 .arrow-right {
     right: 30px;
@@ -499,6 +503,87 @@ h1 strong {
     font-size: 25px;
 }
 
+/* --------------------
+   TILFØJ TIL KURV
+-------------------- */
+
+/* Mørk baggrund bag popup */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+}
+
+/* Selve popup */
+.cart-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 80%;
+    max-width: 800px;
+    min-height: 450px;
+
+    background: white;
+    padding: 60px;
+}
+
+/* Luk-knap */
+.popup-close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+
+    border: none;
+    background: none;
+
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Overskrift */
+.cart-popup h2 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* Produktnavn */
+.cart-popup p {
+    font-size: 20px;
+}
+
+/* Knapper */
+.popup-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 80px;
+}
+
+.popup-buttons button {
+    flex: 1;
+    padding: 25px;
+
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.continue-shopping {
+    background: white;
+    border: 1px solid #222;
+}
+
+.go-to-cart {
+    background: #292827;
+    color: white;
+    border: none;
+}
 .accordion {
   background-color: #fbfaf7;
   color: #444;
