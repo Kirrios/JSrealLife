@@ -240,33 +240,81 @@ Vægt 14,8 kg <br>
             </p>
         </div>
 
-
-        <!-- fuck this... make carousel based on extisting carousel... but with reskin, evading every merge comflict and class issues -->
+        <!-- attempt 0 -->
         <section>
             <h1 style="padding: 20px 400px 0px;">Bliv inspireret af andre</h1>
-                <ul>
-                    <li data-møbelName="Item 1" class="carousel--shadow">
-                        <img class="carousel--image" src="images/Lystra-Spisebordsstol.webp" alt="Sessia Spisebord 240 x 95 x 75 cm ">
-                        <h2>Lystra Spisebordsstol </h2>
-                    </li>
-                    <li data-møbelName="Item 2" class="carousel--shadow">
-                        <h2>Sessia Spisebord 240 x 95 x 75 cm</h2>
-                    </li>
-                    <li data-møbelName="Item 3" class="carousel--shadow">
-                        <h2>Lunestund Kelim Tæppe 250 x 350 cm </h2>
-                    </li>
-                    <li data-møbelName="Item 4" class="carousel--shadow">
-                        <h2>Ceora Spisebordsstol </h2>
-                    </li>
-                    <li data-møbelName="Item 5" class="carousel--shadow">
-                        <h2>Sessia Spisebord 180 x 95 x 75 cm </h2>
-                    </li>
-                    <li data-møbelName="Item 6" class="carousel--shadow">
-                        <h2>Sikra Pendel 52 x 47 cm </h2>
-                    </li>
-                </ul>
+            <ul>
+                <li data-møbelName="Item 1" class="carousel--shadow">
+                    <img class="carousel--image" src="images/Lystra-Spisebordsstol.webp" alt="Sessia Spisebord 240 x 95 x 75 cm ">
+                    <h2>Lystra Spisebordsstol </h2>
+                </li>
+                <li data-møbelName="Item 2" class="carousel--shadow">
+                    <h2>Sessia Spisebord 240 x 95 x 75 cm</h2>
+                </li>
+                <li data-møbelName="Item 3" class="carousel--shadow">
+                    <h2>Lunestund Kelim Tæppe 250 x 350 cm </h2>
+                </li>
+                <li data-møbelName="Item 4" class="carousel--shadow">
+                    <h2>Ceora Spisebordsstol </h2>
+                </li>
+                <li data-møbelName="Item 5" class="carousel--shadow">
+                    <h2>Sessia Spisebord 180 x 95 x 75 cm </h2>
+                </li>
+                <li data-møbelName="Item 6" class="carousel--shadow">
+                    <h2>Sikra Pendel 52 x 47 cm </h2>
+                </li>
+            </ul>
         </section>
         
+        <!-- attempt 1 -->
+            <!-- <section class=".inspo-body">
+                <div id="app">
+                    <div class="inspo-wrapper">
+                        <div class="inspo-slide">
+                            <img class="inspo-img" src="https://media.ilva.dk/webshop/dam/photo1/100004610116-001.jpg?quality=80&bgColor=fff&center=0.5%252C0.5&width=400&rmode=pad&format=webp" alt="slide">
+                        </div>
+                        <div class="inspo-slide">
+                            <img class="inspo-img" src="https://media.ilva.dk/webshop/dam/photo1/100004611727-001.jpg?quality=80&bgColor=fff&center=0.5%252C0.5&width=400&rmode=pad&format=webp" alt="slide">
+                        </div>
+                        <div class="inspo-slide">
+                            <img class="inspo-img" src="https://media.ilva.dk/webshop/dam/photo1/100004606192-001.jpg?quality=80&bgColor=fff&center=0.5%252C0.5&width=400&rmode=pad&format=webp" alt="slide">
+                        </div>
+                        <div class="inspo-slide">
+                            <img class="inspo-img" src="https://media.ilva.dk/webshop/dam/photo1/100004611853-001.jpg?quality=80&bgColor=fff&center=0.5%252C0.5&width=400&rmode=pad&format=webp" alt="slide">
+                        </div>
+                        <div class="inspo-slide">
+                            <img class="inspo-img" src="https://media.ilva.dk/webshop/dam/photo1/100004611730-001.jpg?quality=80&bgColor=fff&center=0.5%252C0.5&width=400&rmode=pad&format=webp" alt="slide">
+                        </div>
+                        <div class="inspo-slide">
+                            <img class="inspo-img" src="https://media.ilva.dk/webshop/dam/photo1/100004606429-001.jpg?quality=80&bgColor=fff&center=0.5%252C0.5&width=400&rmode=pad&format=webp" alt="slide">
+                        </div>
+                    </div>
+                    <button id="inspo-prev">< Prev</button>
+                    <button id="inspo-next">Next ></button>
+                </div>
+            </section> -->
+
+            <!-- attempt 2 -->
+            <h1>Bliv inspireret af andre</h1>
+            <div class="inspoCarousel">
+                <div class="inspoCarouselInner">
+                    <div class="inspoCarousel-item active">
+                        <img class=".inspoCarousel--image" src="https://media.ilva.dk/webshop/dam/photo1/100004610116-001.jpg?quality=80&bgColor=fff&center=0.5%252C0.5&width=400&rmode=pad&format=webp" alt="Stray">
+                    </div>
+                    <div class="inspoCarousel-item">
+                        <img class=".inspoCarousel--image" src="https://media.ilva.dk/webshop/dam/photo1/100004611727-001.jpg?quality=80&bgColor=fff&center=0.5%252C0.5&width=400&rmode=pad&format=webp" alt="Stray">
+                    </div>
+                    <div class="inspoCarousel-item">
+                        <img class=".inspoCarousel--image" src="https://media.ilva.dk/webshop/dam/photo1/100004606192-001.jpg?quality=80&bgColor=fff&center=0.5%252C0.5&width=400&rmode=pad&format=webp" alt="Stray">
+                    </div>
+                </div>
+                <button class="inspoCarouselPrev">‹</button>
+                <button class="inspoCarouselNext">›</button>
+            </div>
+            <script src="inspocarousel.js"></script>
+            </section>
+
+            
         <!-- rating system -->
         
         

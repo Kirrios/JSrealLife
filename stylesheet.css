@@ -678,6 +678,8 @@ h1 strong {
 }
 
 /* INSPO CAROUSEL */
+
+/* --- attempt 0 --- */
 ul {
   width: 100vw;
   height: 509px;
@@ -765,3 +767,87 @@ li{
   height: 50%;
   width: 50%;
 }
+
+
+
+.inspoCarousel {
+  position: relative;
+  height: 600px;
+  margin: 40px auto;
+  
+}
+
+.inspoCarouselInner {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.inspoCarousel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.inspoCarousel-item.active {
+  display: block;
+}
+
+.inspoCarouselPrev {
+  position: absolute;
+  top: 50%;
+  left: 60px;
+  z-index: 100;
+
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 65px;
+}
+
+.inspoCarouselNext {
+  position: absolute;
+  top: 50%;
+  right: 60px;
+  z-index: 100;
+
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 65px;
+}
+
+/* .arrow-left,
+.arrow-right {
+    position: absolute;
+
+    top: 45%;
+
+    transform: translateY(-50%);
+
+    background: transparent;
+
+    border: none;
+
+    font-size: 65px;
+
+    cursor: pointer;
+    z-index: 10;
+}
+
+
+
+.arrow-left {
+    left: 50px;
+
+    color: #ccc;
+}
+
+.arrow-right {
+    right: 30px;
+
+    color: #333;
+}
+ */
