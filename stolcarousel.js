@@ -54,17 +54,25 @@ const previousButton = document.querySelector("#previous");
 
 const nextButton = document.querySelector("#next");
 
+const thumbnails = document.querySelector("#thumbnails");
 
-function updateThumbnails() {
+
+function updateThumbnails() { //Denne funktion skal sørge for at opdatere mine thumbnails
 
     const allThumbnails =
-        document.querySelectorAll(".thumbnail");
+        document.querySelectorAll(".thumbnail"); //her finder den min thumbnail class fra html
 
 
-    for (
-        let i = 0;
+    for ( //Loop, der går igennem alt i mit array én efter én
+        
+        //jeg har givet i værdien 0 med en let variabel. Det betyder at i er i lig med det første billede o
+        let i = 0; 
+
+        //hvis allthumbnails.length bliver større end i
         i < allThumbnails.length;
-        i++
+
+        //så skal der lægges 1 til - altså billedet med værdien højere bliver vist
+        i++ 
     ) {
 
         allThumbnails[i].classList.remove("active");
@@ -149,19 +157,6 @@ previousButton.addEventListener (
     "click", previousImage  
 );
 
-if ( //control structures. Der skal træffes en beslutning. 
-    chair.images.length > 0 && 
-    
-    //Logic operators, betyder AND. Begge ting skal være sande, 
-    // har vi mindst ét billede OG er den 0 eller større. Fungerer som en sikkerhed
-   
-    currentImage >= 0
-) {
-    showImage(); 
-    
-    //Hvis vi er gået forbi sidste billede, så gå til billede 0
-    //gør carousselen cirkulær, så javascripten ikke bare fortsætter
-}
 
 
 //Loops. Bruges når det samme skal gøres flere gange
@@ -175,31 +170,45 @@ for (
 ) {
 
     const thumbnail =
-        document.createElement("img");
+        document.createElement("img"); //her fortæller jeg js at den skal lave et nyt element
 
 
-    thumbnail.src =
-        chair.images[i].src;
+    thumbnail.src = //tager url'en fra det første billede
+        chair.images[i].src; //her giver jeg den nye "img" billederne fra mit array
 
 
-    thumbnail.alt =
+    thumbnail.alt = //her henter jeg "alt" teksten fra mit array
         chair.images[i].alt;
 
 
     thumbnail.classList.add("thumbnail");
 
 
-    thumbnail.addEventListener(
-        "click",
+    thumbnail.addEventListener( //lytter til at brugeren laver end handling
+        "click", //handlingen er et klik
         function() {
 
-            currentImage = i;
+            currentImage = i; //den her gør at når brugeren trykker på et bestemt billede, så bliver det vist
 
-            showImage();
+            showImage(); //kør min showimage funktion, som gør at billedet man trykker på bliver vist. 
 
         }
     );
 
 
-    thumbnails.appendChild(thumbnail);
+    thumbnails.appendChild(thumbnail); //sørger for at min thumbnail <div> bliver fyldt ud med mine thumbnails fra js
+}
+
+if ( //control structures. Der skal træffes en beslutning. 
+    chair.images.length > 0 && 
+    
+    //Logic operators, betyder AND. Begge ting skal være sande, 
+    // har vi mindst ét billede OG er den 0 eller større. Fungerer som en sikkerhed
+   
+    currentImage >= 0
+) {
+    showImage(); 
+    
+    //Hvis vi er gået forbi sidste billede, så gå til billede 0
+    //gør carousselen cirkulær, så javascripten ikke bare fortsætter
 }
