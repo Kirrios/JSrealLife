@@ -680,10 +680,12 @@ h1 strong {
 }
 
 /* INSPO CAROUSEL */
+
+/* --- attempt 0 --- */
 ul {
   width: 100vw;
   height: 509px;
-  padding: 20px 400px;
+  padding: 0 400px 20px;
 
   display: flex;
 
@@ -766,4 +768,103 @@ li{
 .carousel--image {
   height: 50%;
   width: 50%;
+}
+
+
+
+
+
+ /* attempt 3 */
+.inspoCarousel {
+  position: relative;
+  height: 600px;
+  width: 87%;
+  margin: 60px;
+}
+
+.inspo-container{
+  display: flex;
+  flex-direction: row;
+  margin: 0 100px;
+  background: linear-gradient(to bottom, #fff 0%, #fff 50%, #ede8e4 50%, #ede8e4 100%);
+ justify-content: center;
+}
+
+
+.inspo-card {
+  padding: 1em;
+  width: min-content;
+  margin: 1em;
+  display: none;
+  background-color: #fff;
+}
+
+.inspo-card:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.inspo-card.active {
+  display: inline;
+}
+
+.inspo-card__title {
+  padding: 10px;
+  text-align: wrap;
+}
+
+.inspo-card__text {
+  padding-top: 10px;
+  font-weight: bold;
+  padding-bottom: 24px;
+}
+
+.inspo-card__button {
+    background-color: #121212;
+    padding: 1em;
+    border-radius: 20%;
+    width: min-content;
+    color: #efefef;
+}
+
+.inspo-card__button:hover {
+    background-color: #969696;
+}
+
+.inspo-imageContainer {
+  background-color: #fff;
+  height: 300px;
+  width: 300px;
+  /* padding: 20px; */
+  align-content: center;
+}
+
+.inspo-imageContainer img {
+  width: 100%;
+  height: 100%;
+
+  /* object-fit: cover; */
+}
+
+.inspoCarouselPrev {
+  position: absolute;
+  top: 50%;
+  left: 60px;
+  z-index: 100;
+
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 65px;
+}
+
+.inspoCarouselNext {
+  position: absolute;
+  top: 50%;
+  right: 60px;
+  z-index: 100;
+
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 65px;
 }
