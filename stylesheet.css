@@ -516,11 +516,13 @@ h1 strong {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   color: aliceblue;
   transition: all 300ms ease;
+  color: #2d2c2b;
 }
+
 
 .btn {
   background-color: rgb(169, 164, 142);
-  color: aliceblue;
+  color: rgb(255, 250, 240);
   border: 0;
   margin: 10px;
   border-radius: 4px;
