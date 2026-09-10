@@ -9,24 +9,31 @@ let amount = 1;
 
 // PLUS
 
-buttons[1].addEventListener("click", function () {
+buttons[1].addEventListener("click", () => {
 
-    amount = amount + 1;
+    let num1 = amount;
+    let num2 = 1;
+    let result = num1 + num2;
 
-    number.innerHTML = amount;
+    amount = result;
+
+    number.innerHTML = result;
 
 });
 
-
 // MINUS
 
-buttons[0].addEventListener("click", function () {
+buttons[0].addEventListener("click", () => {
 
-    if (amount > 1) {
+    let num1 = amount;
+    let num2 = 1;
+    let result = num1 - num2;
 
-        amount = amount - 1;
+    if (result >= 1) {
 
-        number.innerHTML = amount;
+        amount = result;
+
+        number.innerHTML = result;
 
     }
 
@@ -83,7 +90,7 @@ overlay.style.display = "none";
 
 // ÅBN POPUP
 
-cart.addEventListener("click", function () {
+cart.addEventListener("click", () => {
 
     overlay.style.display = "block";
 
@@ -94,7 +101,7 @@ cart.addEventListener("click", function () {
 
 const closeButton = popup.getElementsByClassName("popup-close")[0];
 
-closeButton.addEventListener("click", function () {
+closeButton.addEventListener("click", () => {
 
     overlay.style.display = "none";
 
@@ -105,7 +112,7 @@ closeButton.addEventListener("click", function () {
 
 const continueButton = popup.getElementsByClassName("continue-shopping")[0];
 
-continueButton.addEventListener("click", function () {
+continueButton.addEventListener("click", () => {
 
     overlay.style.display = "none";
 
@@ -116,7 +123,7 @@ continueButton.addEventListener("click", function () {
 
 const heart = document.getElementsByClassName("heart")[0];
 
-heart.addEventListener("click", function () {
+heart.addEventListener("click", () => {
 
     if (heart.innerHTML === "♡") {
 
