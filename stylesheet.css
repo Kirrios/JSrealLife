@@ -807,12 +807,10 @@ li{
 
 .inspo-card__title {
   padding: 10px;
-  font-size: 24px;
   text-align: wrap;
 }
 
 .inspo-card__text {
-  font-size: 24px;
   padding-top: 10px;
   font-weight: bold;
   padding-bottom: 24px;
